@@ -35,64 +35,45 @@
     <h1 class="contact-title">Contact Us</h1>
     <p class="contact-tagline">"We Would Love To Hear From You"</p>
 
-    <div class="contact-grid">
-
-      <!-- LEFT: Contact Information -->
-      <div class="contact-info-box">
-        <h2>Contact Information</h2>
-
-        <div class="info-row">
-          <span>✉</span>
-          <div>
-            <strong>Email</strong>
-            <p>info@pilatesbloom.com</p>
-          </div>
-        </div>
-
-        <div class="info-row">
-          <span>🕐</span>
-          <div>
-            <strong>Support Hours</strong>
-            <p>Saturday – Thursday, 9 AM – 5 PM</p>
-          </div>
-        </div>
-
-        <div class="info-row">
-          <span>🤖</span>
-          <div>
-            <strong>AI Assistant</strong>
-            <p>Available 24/7</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT: Send a Message -->
-      <div class="contact-form-box">
-        <h2>Send a Message</h2>
-
-        <form action="#" method="post">
-
-          <div class="form-row">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
-          </div>
-
-          <div class="form-row">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-          </div>
-
-          <div class="form-row">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
-          </div>
-
-          <input type="submit" class="btn-send" value="Send Message">
-
-        </form>
-      </div>
-
+    <!-- Contact Information Block -->
+    <div class="contact-block">
+      <h2>Contact Information</h2>
+      <p>Email: info@pilatesbloom.com</p>
+      <p>Support Hours: Saturday – Thursday, 9 AM – 5 PM</p>
+      <p>AI Assistant: Available 24/7</p>
     </div>
+
+    <!-- Send a Message Block -->
+    <div class="contact-block">
+      <h2>Send a Meesage</h2>
+
+      <form action="thankyou.html" method="get">
+
+        <div class="form-row">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject">
+        </div>
+
+        <div class="form-row">
+          <label for="message">Meesage:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+
+        <input type="submit" class="btn-send" value="Send Message">
+
+      </form>
+    </div>
+
   </section>
 
   <!-- FOOTER -->
