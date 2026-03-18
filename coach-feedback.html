@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach Feedback | Pilates Bloom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Pilates Bloom Logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="training.html">Training Program</a></li>
+      <li><a href="dashboard.html">Learning Dashboard</a></li>
+      <li><a href="about.html">About Pilates Bloom</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt;
+    <a href="dashboard.html">Learning Dashboard</a> &gt;
+    Coach Feedback
+  </div>
+
+  <main class="feedback-page">
+    <h1>Coach Feedback</h1>
+    <p class="feedback-subtitle">Share your experience and help our coaches improve their lessons.</p>
+
+    <form action="coach-feedback.html" method="get" class="feedback-form">
+
+      <div class="form-row">
+        <label for="teacher-select">Select a Coach:</label>
+        <select id="teacher-select" name="teacher" required>
+          <option value="" disabled selected>Choose a coach</option>
+          <option value="izzy">Izzy</option>
+          <option value="nicole">Nicole</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Rating:</label>
+        <div class="rating-options">
+          <label><input type="radio" name="rating" value="5" required> &#9733;&#9733;&#9733;&#9733;&#9733; Excellent</label>
+          <label><input type="radio" name="rating" value="4"> &#9733;&#9733;&#9733;&#9733; Very Good</label>
+          <label><input type="radio" name="rating" value="3"> &#9733;&#9733;&#9733; Good</label>
+          <label><input type="radio" name="rating" value="2"> &#9733;&#9733; Fair</label>
+          <label><input type="radio" name="rating" value="1"> &#9733; Needs Improvement</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="feedback-text">Your Feedback:</label>
+        <textarea id="feedback-text" name="feedback" rows="5" placeholder="Tell us about your experience with this coach..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <button type="submit" class="btn-send">Submit Feedback</button>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="index.html"><img src="images/logo.png" alt="Pilates Bloom Logo"></a>
+      </div>
+      <div class="footer-contact">
+        <div class="contact-item">
+          <span>&#9993;</span>
+          <span>info@pilatesbloom.com</span>
+        </div>
+        <div class="contact-item">
+          <span>&#9742;</span>
+          <span>+966 554367809</span>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.tiktok.com/@pilates.bloom" target="_blank">
+          <img src="images/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/1pilates_bloom" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pilates Bloom. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

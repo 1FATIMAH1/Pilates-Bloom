@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wellness Notes | Pilates Bloom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Pilates Bloom Logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="training.html">Training Program</a></li>
+      <li><a href="dashboard.html">Learning Dashboard</a></li>
+      <li><a href="about.html">About Pilates Bloom</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt;
+    <a href="dashboard.html">Learning Dashboard</a> &gt;
+    My Wellness Notes
+  </div>
+
+  <main class="notes-page">
+    <h1>My Wellness Notes</h1>
+    <p class="notes-subtitle">Keep track of your Pilates journey, tips, and personal reminders.</p>
+
+    <!-- DELETE FORM: existing notes with checkboxes and small images -->
+    <section class="notes-section">
+      <h2>Your Saved Notes</h2>
+
+      <form action="notes.html" method="get">
+        <div class="notes-list">
+
+          <label class="note-item">
+            <input type="checkbox" name="delete-note" value="note1">
+            <img src="images/lesson1.png" alt="Note image" class="note-thumb">
+            <div class="note-text">
+              <strong>Breathing Tip:</strong> Always exhale during the effort phase of each exercise.
+            </div>
+          </label>
+
+          <label class="note-item">
+            <input type="checkbox" name="delete-note" value="note2">
+            <img src="images/lesson2.png" alt="Note image" class="note-thumb">
+            <div class="note-text">
+              <strong>Core Reminder:</strong> Engage your core before starting any movement.
+            </div>
+          </label>
+
+          <label class="note-item">
+            <input type="checkbox" name="delete-note" value="note3">
+            <img src="images/lesson3.png" alt="Note image" class="note-thumb">
+            <div class="note-text">
+              <strong>Flexibility Goal:</strong> Practice stretching for at least 10 minutes daily.
+            </div>
+          </label>
+
+          <label class="note-item">
+            <input type="checkbox" name="delete-note" value="note4">
+            <img src="images/Lesson 4 ( Izzy).PNG" alt="Note image" class="note-thumb">
+            <div class="note-text">
+              <strong>Posture Check:</strong> Keep shoulders relaxed and away from ears during exercises.
+            </div>
+          </label>
+
+          <label class="note-item">
+            <input type="checkbox" name="delete-note" value="note5">
+            <img src="images/Lesson5 (Izzy).PNG" alt="Note image" class="note-thumb">
+            <div class="note-text">
+              <strong>Flow Tip:</strong> Transition smoothly between exercises without rushing.
+            </div>
+          </label>
+
+        </div>
+
+        <div class="notes-actions">
+          <button type="submit" class="btn-delete">Delete Selected</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ADD FORM: add a new note with priority dropdown -->
+    <section class="notes-section">
+      <h2>Add a New Note</h2>
+
+      <form action="notes.html" method="get">
+        <div class="form-row">
+          <label for="note-text">Note Text:</label>
+          <textarea id="note-text" name="note-text" rows="4" placeholder="Write your wellness note here..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="note-priority">Priority Level:</label>
+          <select id="note-priority" name="note-priority">
+            <option value="" disabled selected>Select priority</option>
+            <option value="1">1 - High</option>
+            <option value="2">2 - Medium</option>
+            <option value="3">3 - Low</option>
+          </select>
+        </div>
+
+        <div class="notes-actions">
+          <button type="submit" class="btn-add">Add Note</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="index.html"><img src="images/logo.png" alt="Pilates Bloom Logo"></a>
+      </div>
+      <div class="footer-contact">
+        <div class="contact-item">
+          <span>&#9993;</span>
+          <span>info@pilatesbloom.com</span>
+        </div>
+        <div class="contact-item">
+          <span>&#9742;</span>
+          <span>+966 554367809</span>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.tiktok.com/@pilates.bloom" target="_blank">
+          <img src="images/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/1pilates_bloom" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pilates Bloom. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
