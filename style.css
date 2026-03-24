@@ -427,7 +427,7 @@ color:#e48aa4;
   background:#f8f8f8;
   min-height:170px;
 }
-َ
+
 /* teacher name */
 .teacher-info h2{
   font-size:30px;
@@ -450,6 +450,8 @@ color:#e48aa4;
 /* CONTACT PAGE */
 .contact-page {
   padding: 40px 60px 80px;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .contact-title {
@@ -465,83 +467,47 @@ color:#e48aa4;
   font-size: 15px;
   color: #888;
   font-style: italic;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
-.contact-grid {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.contact-block {
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  background: white;
 }
 
-.contact-info-box,
-.contact-form-box {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 30px 28px;
-  background: #fdf7f9;
-}
-
-.contact-info-box {
-  flex: 1;
-  min-width: 240px;
-}
-
-.contact-form-box {
-  flex: 2;
-  min-width: 300px;
-}
-
-.contact-info-box h2,
-.contact-form-box h2 {
-  font-size: 18px;
+.contact-block h2 {
+  font-size: 17px;
   font-weight: 700;
   color: #333;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #e0cdd3;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
-.info-row {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  margin-bottom: 20px;
+.contact-block p {
   font-size: 14px;
   color: #444;
-}
-
-.info-row strong {
-  display: block;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 3px;
-}
-
-.info-row p {
-  color: #555;
-  margin: 0;
+  margin-bottom: 8px;
 }
 
 .form-row {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .form-row label {
   display: block;
   font-size: 14px;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 6px;
+  color: #333;
+  margin-bottom: 4px;
 }
 
 .form-row input,
 .form-row textarea {
   width: 100%;
-  padding: 10px 13px;
+  padding: 8px 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   background: white;
@@ -550,7 +516,7 @@ color:#e48aa4;
 }
 
 .form-row textarea {
-  height: 120px;
+  height: 80px;
   resize: vertical;
 }
 
@@ -558,11 +524,11 @@ color:#e48aa4;
   background: #e48aa4;
   color: white;
   border: none;
-  padding: 11px 32px;
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 14px;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .btn-send:hover {
