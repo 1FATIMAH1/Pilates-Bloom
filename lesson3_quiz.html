@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 3 Quiz – Coach Nicole | Pilates Bloom</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+.quiz-container {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.quiz-question {
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.quiz-question:nth-child(1) { background: #fff0f4; }
+.quiz-question:nth-child(2) { background: #ffe6ee; }
+.quiz-question:nth-child(3) { background: #ffdbe7; }
+.quiz-question:nth-child(4) { background: #ffd0e0; }
+.quiz-question:nth-child(5) { background: #ffc5d8; }
+
+.quiz-question h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.quiz-options label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.quiz-submit {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.quiz-submit button {
+  padding: 12px 40px;
+  border: none;
+  background: #e9a6b6;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quiz-submit button:hover {
+  background: #d77f9a;
+}
+
+.lesson-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin: 40px 0;
+}
+
+.nav-arrow {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #555;
+  text-decoration: none;
+  background: white;
+  transition: 0.25s;
+}
+
+.nav-arrow:hover {
+  background: #e48aa4;
+  border-color: #e48aa4;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Pilates Bloom Logo">
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="training.html">Training Program</a></li>
+    <li><a href="dashboard.html">Learning Dashboard</a></li>
+    <li><a href="about.html">About Pilates Bloom</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a> &gt;
+  <a href="training.html">Training Program</a> &gt;
+  <a href="lesson3.html">Lesson 3</a> &gt;
+  Quiz
+</div>
+
+<!-- QUIZ -->
+<div class="quiz-container">
+  <form action="result.html">
+
+    <!-- Question 1 -->
+    <div class="quiz-question">
+      <h3>Question 1</h3>
+      <p>During the ab exercises, where should your belly button be?</p>
+      <div class="quiz-options">
+        <label><input type="radio" name="q1"> Dropping down toward the floor</label>
+        <label><input type="radio" name="q1"> Sucked in tight toward your spine</label>
+        <label><input type="radio" name="q1"> Pushed out as far as it can go</label>
+        <label><input type="radio" name="q1"> Wiggling around from side to side</label>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="quiz-question">
+      <h3>Question 2</h3>
+      <p>When doing the Bicycle Crunch, how should you move?</p>
+      <div class="quiz-options">
+        <label><input type="radio" name="q2"> Fast and messy to finish quickly</label>
+        <label><input type="radio" name="q2"> Slow and controlled with a steady twist</label>
+        <label><input type="radio" name="q2"> Keeping your legs perfectly still on the mat</label>
+        <label><input type="radio" name="q2"> Moving only your head up and down</label>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="quiz-question">
+      <h3>Question 3</h3>
+      <p>In a Tricep Push-Up, where should your elbows go as you lower down?</p>
+      <div class="quiz-options">
+        <label><input type="radio" name="q3"> Pointing out wide to the sides</label>
+        <label><input type="radio" name="q3"> Tucked in very close to your ribs</label>
+        <label><input type="radio" name="q3"> Staying completely straight without bending</label>
+        <label><input type="radio" name="q3"> Resting on the floor the entire time</label>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="quiz-question">
+      <h3>Question 4</h3>
+      <p>When doing Shoulder Taps in a plank, what is the goal for your hips?</p>
+      <div class="quiz-options">
+        <label><input type="radio" name="q4"> To wiggle and sway as much as possible</label>
+        <label><input type="radio" name="q4"> To stay still and level like a flat table</label>
+        <label><input type="radio" name="q4"> To point high up toward the ceiling</label>
+        <label><input type="radio" name="q4"> To drop down and touch the mat</label>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="quiz-question">
+      <h3>Question 5</h3>
+      <p>What is the most important thing to do throughout the whole workout?</p>
+      <div class="quiz-options">
+        <label><input type="radio" name="q5"> Hold your breath until the exercise is over</label>
+        <label><input type="radio" name="q5"> Keep breathing deeply and steadily</label>
+        <label><input type="radio" name="q5"> Close your eyes and try to fall asleep</label>
+        <label><input type="radio" name="q5"> Shout as loud as you can during the hard parts</label>
+      </div>
+    </div>
+
+    <!-- SUBMIT -->
+    <div class="quiz-submit">
+      <button type="submit">Submit</button>
+    </div>
+
+    <!-- NAV -->
+    <div class="lesson-nav">
+      <a href="lesson3_page2_nicole.html" class="nav-arrow">&#8592;</a>
+    </div>
+
+  </form>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Pilates Bloom Logo">
+      </a>
+    </div>
+    <div class="footer-contact">
+      <div class="contact-item">
+        <span>✉</span>
+        <span>info@pilatesbloom.com</span>
+      </div>
+      <div class="contact-item">
+        <span>☎</span>
+        <span>+966 554367809</span>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.tiktok.com/@pilates.bloom" target="_blank">
+        <img src="images/tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://www.instagram.com/1pilates_bloom" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Pilates Bloom. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
