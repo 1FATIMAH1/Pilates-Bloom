@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lesson 1 Quiz | Pilates Bloom</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* QUIZ SECTION */
+.quiz-container{
+  max-width:900px;
+  margin:40px auto;
+  font-family:Arial, sans-serif;
+}
+
+.quiz-question{
+  padding:25px;
+  margin-bottom:20px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.quiz-question:nth-child(1){
+  background:#fff0f4;
+}
+
+.quiz-question:nth-child(2){
+  background:#ffe6ee;
+}
+
+.quiz-question:nth-child(3){
+  background:#ffdbe7;
+}
+
+.quiz-question:nth-child(4){
+  background:#ffd0e0;
+}
+
+.quiz-question:nth-child(5){
+  background:#ffc5d8;
+}
+
+.quiz-question h3{
+  margin-bottom:15px;
+  font-size:16px;
+}
+
+.quiz-options label{
+  display:block;
+  margin-bottom:8px;
+  cursor:pointer;
+}
+
+.quiz-submit{
+  text-align:center;
+  margin-top:30px;
+}
+
+.quiz-submit button{
+  padding:12px 40px;
+  border:none;
+  background:#e9a6b6;
+  color:white;
+  font-size:16px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.quiz-submit button:hover{
+  background:#d77f9a;
+}
+
+.lesson-nav{
+  display:flex;
+  justify-content:flex-start;
+  margin:40px 0;
+}
+
+.nav-arrow{
+  width:44px;
+  height:44px;
+  border:2px solid #888;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  color:#555;
+  text-decoration:none;
+  background:white;
+  transition:0.25s;
+}
+
+.nav-arrow:hover{
+  background:#f0f0f0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Pilates Bloom Logo">
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="training.html">Training Program</a></li>
+    <li><a href="dashboard.html">Learning Dashboard</a></li>
+    <li><a href="about.html">About Pilates Bloom</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a> &gt;
+  <a href="training.html">Training Program</a> &gt;
+  <a href="lesson1.html">Lesson 1</a> &gt;
+  Quiz
+</div>
+
+<!-- QUIZ -->
+<div class="quiz-container">
+  <form action="lesson1-result.html">
+
+    <div class="quiz-question">
+      <h3>Question 1</h3>
+      <p>What is the main goal of Pilates foundations:</p>
+
+      <div class="quiz-options">
+        <label><input type="radio" name="q1"> Increase speed and intensity</label>
+        <label><input type="radio" name="q1"> Improve breathing and posture control</label>
+        <label><input type="radio" name="q1"> Lift heavy weights</label>
+        <label><input type="radio" name="q1"> Perform fast movements</label>
+      </div>
+    </div>
+
+    <div class="quiz-question">
+      <h3>Question 2</h3>
+      <p>During beginner Pilates, movements should be:</p>
+
+      <div class="quiz-options">
+        <label><input type="radio" name="q2"> Quick and powerful</label>
+        <label><input type="radio" name="q2"> Slow and controlled</label>
+        <label><input type="radio" name="q2"> Random</label>
+        <label><input type="radio" name="q2"> High impact</label>
+      </div>
+    </div>
+
+    <div class="quiz-question">
+      <h3>Question 3</h3>
+      <p>Breathing in Pilates helps to:</p>
+
+      <div class="quiz-options">
+        <label><input type="radio" name="q3"> Increase heart rate only</label>
+        <label><input type="radio" name="q3"> Support core activation and movement control</label>
+        <label><input type="radio" name="q3"> Make exercises harder</label>
+        <label><input type="radio" name="q3"> Reduce flexibility</label>
+      </div>
+    </div>
+
+    <div class="quiz-question">
+      <h3>Question 4</h3>
+      <p>Why is posture alignment important:</p>
+
+      <div class="quiz-options">
+        <label><input type="radio" name="q4"> It improves body balance and reduces strain</label>
+        <label><input type="radio" name="q4"> It makes exercises faster</label><label><input type="radio" name="q4"> It increases muscle size quickly</label>
+        <label><input type="radio" name="q4"> It replaces core exercises</label>
+      </div>
+    </div>
+
+    <div class="quiz-question">
+      <h3>Question 5</h3>
+      <p>Before increasing intensity, students should first:</p>
+
+      <div class="quiz-options">
+        <label><input type="radio" name="q5"> Add more repetitions</label>
+        <label><input type="radio" name="q5"> Focus on body awareness and control</label>
+        <label><input type="radio" name="q5"> Skip warm-up</label>
+        <label><input type="radio" name="q5"> Move as fast as possible</label>
+      </div>
+    </div>
+
+    <div class="quiz-submit">
+      <button type="submit">Submit</button>
+    </div>
+
+    <div class="lesson-nav">
+      <a href="lesson1-table.html" class="nav-arrow">&#8592;</a>
+    </div>
+
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Pilates Bloom Logo">
+      </a>
+    </div>
+
+    <div class="footer-contact">
+      <div class="contact-item">
+        <span>✉️</span>
+        <span>info@pilatesbloom.com</span>
+      </div>
+      <div class="contact-item">
+        <span>☎️</span>
+        <span>+966 554367809</span>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.tiktok.com/@pilates.bloom" target="_blank">
+        <img src="images/tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://www.instagram.com/1pilates_bloom" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>©️ 2026 Pilates Bloom. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
