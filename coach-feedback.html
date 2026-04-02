@@ -42,12 +42,13 @@
 
       <div class="form-row">
         <label>Rating:</label>
-        <div class="rating-options">
-          <label><input type="radio" name="rating" value="1" required> &#9734;</label>
-          <label><input type="radio" name="rating" value="2"> &#9734;</label>
-          <label><input type="radio" name="rating" value="3"> &#9734;</label>
-          <label><input type="radio" name="rating" value="4"> &#9734;</label>
-          <label><input type="radio" name="rating" value="5"> &#9734;</label>
+        <div class="rating-options" id="star-rating">
+          <span class="star" data-value="1">&#9734;</span>
+          <span class="star" data-value="2">&#9734;</span>
+          <span class="star" data-value="3">&#9734;</span>
+          <span class="star" data-value="4">&#9734;</span>
+          <span class="star" data-value="5">&#9734;</span>
+          <input type="hidden" name="rating" id="rating-value" value="">
         </div>
       </div>
 
@@ -91,6 +92,27 @@
       <p>&copy; 2026 Pilates Bloom. All Rights Reserved.</p>
     </div>
   </footer>
+
+<script>
+  const stars = document.querySelectorAll('#star-rating .star');
+  const ratingInput = document.getElementById('rating-value');
+
+  stars.forEach(star => {
+    star.addEventListener('click', () => {
+      const value = parseInt(star.dataset.value);
+      ratingInput.value = value;
+      stars.forEach(s => {
+        if (parseInt(s.dataset.value) <= value) {
+          s.innerHTML = '&#9733;';
+          s.style.color = '#f5a623';
+        } else {
+          s.innerHTML = '&#9734;';
+          s.style.color = '#8a8a8a';
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
