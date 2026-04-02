@@ -417,7 +417,96 @@ body {
   font-style: italic;
 }
 
+/* =========================
+   CONTACT PAGE
+========================= */
+.contact-page {
+  padding: 40px 60px 80px;
+  max-width: 750px;
+  margin: 0 auto;
+}
 
+.contact-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.contact-tagline {
+  text-align: center;
+  font-size: 15px;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 35px;
+}
+
+.contact-block {
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  background: white;
+}
+
+.contact-block h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-block p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.form-row {
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: #333;
+  outline: none;
+}
+
+.form-row textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.btn-send {
+  background: #e48aa4;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.btn-send:hover {
+  background: #d4708e;
+}
 
 /* =========================
    TRAINING PAGE
@@ -836,15 +925,15 @@ body {
 }
 
 .notes-page h1 {
-  font-size: 38px;
+  font-size: 26px;
   color: #333;
   margin-bottom: 8px;
 }
 
 .notes-subtitle {
-  font-size: 16px;
+  font-size: 13px;
   color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .notes-section {
@@ -857,10 +946,10 @@ body {
 }
 
 .notes-section h2 {
-  font-size: 22px;
+  font-size: 17px;
   color: #c97090;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #f3d9e3;
 }
 
@@ -952,15 +1041,15 @@ body {
 }
 
 .feedback-page h1 {
-  font-size: 34px;
+  font-size: 24px;
   color: #333;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .feedback-subtitle {
-  font-size: 16px;
+  font-size: 13px;
   color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .feedback-form {
@@ -1002,7 +1091,7 @@ body {
 }
 
 .rating-options label {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
   cursor: pointer;
   display: flex;
