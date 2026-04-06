@@ -1,40 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2 Quiz | Pilates Bloom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<title>Lesson 2 Quiz | Pilates Bloom</title>
-<link rel="stylesheet" href="style.css">
+<body>
 
-<style>
-/* QUIZ SECTION */
-.quiz-container{
-  max-width:900px;
-  margin:40px auto;
-  font-family:Arial, sans-serif;
-}
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Pilates Bloom Logo">
+      </a>
+    </div>
 
-.quiz-question{
-  padding:25px;
-  margin-bottom:20px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.05);
-}
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="training.html">Training Program</a></li>
+      <li><a href="dashboard.html">Learning Dashboard</a></li>
+      <li><a href="about.html">About Pilates Bloom</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
 
-.quiz-question:nth-child(1){
-  background:#fff0f4;
-}
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt;
+    <a href="training.html">Training Program</a> &gt;
+    <a href="lesson2-coaches.html">Lesson 2</a> &gt;
+    Quiz
+  </div>
 
-.quiz-question:nth-child(2){
-  background:#ffe6ee;
-}
+  <div class="quiz-container">
+    <form action="lesson2-result.html">
 
-.quiz-question:nth-child(3){
-  background:#ffdbe7;
-}
+      <div class="quiz-question">
+        <h3>Question 1</h3>
+        <p>What is the main focus of Level 2 core training in Pilates?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q1"> Moving faster than Level 1</label>
+          <label><input type="radio" name="q1"> Improving stability and control with stronger core engagement</label>
+          <label><input type="radio" name="q1"> Training only the arms</label>
+          <label><input type="radio" name="q1"> Avoiding balance work</label>
+        </div>
+      </div>
 
-.quiz-question:nth-child(4){
+      <div class="quiz-question">
+        <h3>Question 2</h3>
+        <p>During glute bridge variations, the hips should:</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q2"> Drop quickly to the floor</label>
+          <label><input type="radio" name="q2"> Stay lifted with controlled alignment</label>
+          <label><input type="radio" name="q2"> Twist to one side</label>
+          <label><input type="radio" name="q2"> Move without engaging the core</label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <h3>Question 3</h3>
+        <p>Why is unilateral work like a single leg bridge more challenging than the beginner version?</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q3"> It removes the need for balance</label>
+          <label><input type="radio" name="q3"> It requires more core stability and hip control</label>
+          <label><input type="radio" name="q3"> It only stretches the arms</label>
+          <label><input type="radio" name="q3"> It makes breathing unnecessary</label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <h3>Question 4</h3>
+        <p>In Level 2 Pilates, controlled breathing helps to:</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q4"> Reduce coordination between breath and movement</label>
+          <label><input type="radio" name="q4"> Support core activation and improve movement quality</label>
+          <label><input type="radio" name="q4"> Make the exercise random</label>
+          <label><input type="radio" name="q4"> Replace posture awareness</label>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <h3>Question 5</h3>
+        <p>Before progressing from Level 1 to Level 2, students should first:</p>
+        <div class="quiz-options">
+          <label><input type="radio" name="q5"> Master beginner control and alignment</label>
+          <label><input type="radio" name="q5"> Skip the basics and start advanced moves</label>
+          <label><input type="radio" name="q5"> Focus only on speed</label>
+          <label><input type="radio" name="q5"> Ignore glute and core engagement</label>
+        </div>
+      </div>
+
+      <div class="quiz-submit">
+        <button type="submit">Submit</button>
+      </div>
+
+      <div class="lesson-nav">
+        <a href="lesson2-table.html" class="nav-arrow">&#8592;</a>
+      </div>
+
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Pilates Bloom Logo">
+        </a>
+      </div>
+
+      <div class="footer-contact">
+        <div class="contact-item">
+          <span>✉</span>
+          <span>info@pilatesbloom.com</span>
+        </div>
+        <div class="contact-item">
+          <span>☎</span>
+          <span>+966 554367809</span>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.tiktok.com/@pilates.bloom" target="_blank">
+          <img src="images/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/1pilates_bloom" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Pilates Bloom. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>.quiz-question:nth-child(4){
   background:#ffd0e0;
 }
 
