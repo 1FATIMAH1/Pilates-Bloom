@@ -3,38 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lesson 1 – Coach Izzy | Pilates Bloom</title>
+  <title>Lesson 1 – Page 1 (Izzy) | Pilates Bloom</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .lesson-page {
-      padding: 40px 60px 60px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+</head>
+<body>
 
-    .lesson-meta-box {
-      margin-bottom: 24px;
-      line-height: 1.8;
-      color: #555;
-      font-size: 16px;
-    }
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Pilates Bloom Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="training.html">Training Program</a></li>
+      <li><a href="dashboard.html">Learning Dashboard</a></li>
+      <li><a href="about.html">About Pilates Bloom</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
 
-    .lesson-meta-box div {
-      margin-bottom: 4px;
-    }
+  <div class="breadcrumb">
+    <a href="training.html">Training Program</a> &gt;
+    <a href="lesson1.html">Lesson 1</a> &gt;
+    Page 1
+  </div>
 
-    .lesson-meta-box span {
-      font-weight: 700;
-      color: #444;
-    }
+  <div class="lesson-page">
+    <h1>Lesson 1 – Introduction to Pilates</h1>
 
-    .lesson-description {
-      display: block;
-      font-size: 16px;
-      color: #555;
-      max-width: 820px;
-      line-height: 1.7;
-      margin: 0 0 24px 0;
+    <div class="lesson-meta-box">
+      <div><span>Coach:</span> Izzy – Introduction to Pilates</div>
+      <div><span>Level:</span> Beginner</div>
+      <div><span>Duration:</span> 10–15 min</div>
+    </div>
+
+    <div class="lesson-description">
+      This lesson builds the foundation of body awareness and breathing control.
+      It improves posture and prepares the body for advanced movements.
+    </div>
+
+    <video class="lesson-hero-img" controls>
+      <source src="video/Lesson 1 (Izzy).MP4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="exercise-section">
+      <h2>Exercises</h2>
+
+      <div class="exercise-grid">
+        <div class="exercise-card">
+          <img src="images/lesson1_move1.jpeg" alt="Pelvic Tilt">
+          <div class="exercise-content">
+            <h3>Pelvic Tilt</h3>
+            <div class="exercise-duration">30 seconds - 10 repetitions</div>
+            <p>Helps activate the core and gently mobilize the lower spine while improving pelvic control.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="images/lesson1_move2.jpeg" alt="Shoulder Bridge">
+          <div class="exercise-content">
+            <h3>Shoulder Bridge</h3>
+            <div class="exercise-duration">40 seconds - 8 repetitions</div>
+            <p>Strengthens the glutes and hamstrings while supporting spinal stability.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="images/lesson1_move3.jpeg" alt="Arm Raises with Breathing">
+          <div class="exercise-content">
+            <h3>Arm Raises with Breathing</h3>
+            <div class="exercise-duration">1 minute - 10 repetitions</div>
+            <p>Improves breathing coordination while gently mobilizing the shoulders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-nav-custom">
+      <a href="lesson1-coaches.html" class="nav-arrow-custom left">&#8592;</a>
+      <a href="lesson1-table.html" class="nav-arrow-custom right">&#8594;</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Pilates Bloom Logo">
+        </a>
+      </div>
+
+      <div class="footer-contact">
+        <div class="contact-item">
+          <span>✉</span>
+          <span>info@pilatesbloom.com</span>
+        </div>
+        <div class="contact-item">
+          <span>☎</span>
+          <span>+966 554367809</span>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.tiktok.com/@pilates.bloom" target="_blank">
+          <img src="images/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/1pilates_bloom" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©️ 2026 Pilates Bloom. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>      margin: 0 0 24px 0;
     }
 
     .lesson-video {
