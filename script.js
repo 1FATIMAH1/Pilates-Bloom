@@ -1,3 +1,33 @@
+/* =========================
+   QUIZ HANDLER (GLOBAL)
+========================= */
+function handleQuiz() {
+  let score = 0;
+
+  for (let i = 1; i <= 5; i++) {
+    const selected = document.querySelector('input[name="q' + i + '"]:checked');
+
+    if (!selected) {
+      alert("Please answer all questions!");
+      return false;
+    }
+
+    if (selected.value === "correct") {
+      score++;
+    }
+  }
+
+  localStorage.setItem("lesson6CurrentScore", score);
+
+  let bestScore = localStorage.getItem("lesson6BestScore");
+
+  if (!bestScore || score > Number(bestScore)) {
+    localStorage.setItem("lesson6BestScore", score);
+  }
+
+  return true;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
 
   /* =========================
@@ -59,9 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (clock) {
     function updateClock() {
       const now = new Date();
-      clock.textContent =
-        now.toLocaleDateString() + " | " + now.toLocaleTimeString();
+      clock.textContent = now.toLocaleDateString() + " | " + now.toLocaleTimeString();
     }
+
     updateClock();
     setInterval(updateClock, 1000);
   }
@@ -82,10 +112,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const cardWidth = cards[0].offsetWidth + 16;
       currentIndex++;
 
-      if (currentIndex >= cards.length) currentIndex = 0;
+      if (currentIndex >= cards.length) {
+        currentIndex = 0;
+      }
 
-      reviewsTrack.style.transform =
-        "translateX(-" + (currentIndex * cardWidth) + "px)";
+      reviewsTrack.style.transform = "translateX(-" + (currentIndex * cardWidth) + "px)";
     });
   }
 
@@ -96,14 +127,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const teachersContainer = document.getElementById("teachersContainer");
 
   if (sortSelect && teachersContainer) {
-
     const teacherCards = Array.from(
       teachersContainer.querySelectorAll(".teacher-card")
     );
 
     function renderCards(cards) {
       teachersContainer.innerHTML = "";
-      cards.forEach(card => teachersContainer.appendChild(card));
+      cards.forEach(function (card) {
+        teachersContainer.appendChild(card);
+      });
     }
 
     function shuffleCards(cards) {
@@ -121,21 +153,21 @@ document.addEventListener("DOMContentLoaded", function () {
       if (type === "random") {
         sorted = shuffleCards(sorted);
       } else if (type === "az") {
-        sorted.sort((a, b) =>
-          a.dataset.name.localeCompare(b.dataset.name)
-        );
+        sorted.sort(function (a, b) {
+          return a.dataset.name.localeCompare(b.dataset.name);
+        });
       } else if (type === "za") {
-        sorted.sort((a, b) =>
-          b.dataset.name.localeCompare(a.dataset.name)
-        );
+        sorted.sort(function (a, b) {
+          return b.dataset.name.localeCompare(a.dataset.name);
+        });
       } else if (type === "exp-low") {
-        sorted.sort((a, b) =>
-          Number(a.dataset.experience) - Number(b.dataset.experience)
-        );
+        sorted.sort(function (a, b) {
+          return Number(a.dataset.experience) - Number(b.dataset.experience);
+        });
       } else if (type === "exp-high") {
-        sorted.sort((a, b) =>
-          Number(b.dataset.experience) - Number(a.dataset.experience)
-        );
+        sorted.sort(function (a, b) {
+          return Number(b.dataset.experience) - Number(a.dataset.experience);
+        });
       }
 
       renderCards(sorted);
@@ -146,6 +178,39 @@ document.addEventListener("DOMContentLoaded", function () {
     sortSelect.addEventListener("change", function () {
       sortTeachers(sortSelect.value);
     });
+  }
+
+  /* =========================
+     LESSON ALERT (ALL LESSON PAGES)
+  ========================= */
+  const lessonGoal = document.getElementById("lessonGoal");
+
+  if (lessonGoal) {
+    setTimeout(function () {
+      alert(
+        "Lesson Goal: " + lessonGoal.textContent +
+        "\n\nReminder: Please take the quiz after finishing the lesson."
+      );
+    }, 3000);
+  }
+
+  /* =========================
+     RESULT PAGE
+  ========================= */
+  const currentElement = document.getElementById("currentScore");
+  const bestElement = document.getElementById("bestScore");
+
+  if (currentElement && bestElement) {
+    const current = localStorage.getItem("lesson6CurrentScore");
+    const best = localStorage.getItem("lesson6BestScore");
+
+    if (current !== null) {
+      currentElement.textContent = current + " / 5";
+    }
+
+    if (best !== null) {
+      bestElement.textContent = best + " / 5";
+    }
   }
 
 });
