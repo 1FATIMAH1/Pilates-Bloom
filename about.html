@@ -33,41 +33,38 @@
   <!-- ABOUT PAGE -->
   <section class="about-page">
 
-    <div class="sort-box">
-      <label for="sortTeachers">Sort By</label>
-      <select id="sortTeachers" name="sortTeachers">
-        <optgroup label="Name">
-          <option>A-Z</option>
-          <option>Z-A</option>
-        </optgroup>
-        <optgroup label="Years of Experience">
-          <option>Low to High</option>
-          <option>High to Low</option>
-        </optgroup>
-      </select>
+   <div class="sort-box">
+  <label for="sortTeachers">Sort By</label>
+  <select id="sortTeachers" name="sortTeachers">
+    <option value="random">Random</option>
+    <option value="az">A-Z</option>
+    <option value="za">Z-A</option>
+    <option value="exp-low">Low to High</option>
+    <option value="exp-high">High to Low</option>
+  </select>
+</div>
+
+<div class="teachers-scroll" id="teachersContainer">
+
+  <div class="teacher-card" data-name="Izzy" data-experience="6">
+    <img src="images/Izzy profile.jpeg" alt="Coach Izzy">
+    <div class="teacher-info">
+      <h2>Coach Izzy</h2>
+      <p><strong>Years of Experience:</strong> 6 years</p>
+      <blockquote>“Strong core, strong confidence.”</blockquote>
     </div>
+  </div>
 
-    <div class="teachers-scroll">
-
-      <div class="teacher-card">
-        <img src="images/Izzy profile.jpeg" alt="Coach Izzy">
-        <div class="teacher-info">
-          <h2>Coach Izzy</h2>
-          <p><strong>Years of Experience:</strong> 6 years</p>
-          <blockquote>“Strong core, strong confidence.”</blockquote>
-        </div>
-      </div>
-
-      <div class="teacher-card">
-        <img src="images/Nicole profile.jpeg" alt="Coach Nicole">
-        <div class="teacher-info">
-          <h2>Coach Nicole</h2>
-          <p><strong>Years of Experience:</strong> 8 years</p>
-          <blockquote>“Move with intention, bloom with strength.”</blockquote>
-        </div>
-      </div>
-
+  <div class="teacher-card" data-name="Nicole" data-experience="8">
+    <img src="images/Nicole profile.jpeg" alt="Coach Nicole">
+    <div class="teacher-info">
+      <h2>Coach Nicole</h2>
+      <p><strong>Years of Experience:</strong> 8 years</p>
+      <blockquote>“Move with intention, bloom with strength.”</blockquote>
     </div>
+  </div>
+  </div>
+
   </section>
 
   <!-- FOOTER -->
@@ -107,6 +104,7 @@
       <p>© 2026 Pilates Bloom. All Rights Reserved.</p>
     </div>
   </footer>
-
+    
+<script src="script.js"></script>
 </body>
 </html>
