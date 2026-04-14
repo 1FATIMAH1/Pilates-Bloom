@@ -41,10 +41,10 @@
 <h3>Question 1</h3>
 <p>What is the focus of the Intermediate Flow lesson?</p>
 <div class="quiz-options">
-<label><input type="radio" name="q1"> Performing fast movements</label>
-<label><input type="radio" name="q1"> Improving breathing and body control</label>
-<label><input type="radio" name="q1"> Training only the legs</label>
-<label><input type="radio" name="q1"> High-impact exercises</label>
+<label><input type="radio" name="q1" value="wrong"> Performing fast movements</label>
+<label><input type="radio" name="q1" value="correct"> Improving breathing and body control</label>
+<label><input type="radio" name="q1" value="wrong"> Training only the legs</label>
+<label><input type="radio" name="q1" value="wrong"> High-impact exercises</label>
 </div>
 </div>
 
@@ -53,10 +53,10 @@
 <h3>Question 2</h3>
 <p>During the Intermediate Flow exercises, movements should be:</p>
 <div class="quiz-options">
-<label><input type="radio" name="q2"> Quick and powerful</label>
-<label><input type="radio" name="q2"> Slow and controlled</label>
-<label><input type="radio" name="q2"> Random and flexible</label>
-<label><input type="radio" name="q2"> High impact</label>
+<label><input type="radio" name="q2" value="wrong"> Quick and powerful</label>
+<label><input type="radio" name="q2" value="correct"> Slow and controlled</label>
+<label><input type="radio" name="q2" value="wrong"> Random and flexible</label>
+<label><input type="radio" name="q2" value="wrong"> High impact</label>
 </div>
 </div>
 
@@ -65,10 +65,10 @@
 <h3>Question 3</h3>
 <p>Breathing in Pilates helps to:</p>
 <div class="quiz-options">
-<label><input type="radio" name="q3"> Support core activation</label>
-<label><input type="radio" name="q3"> Make exercises harder</label>
-<label><input type="radio" name="q3"> Reduce stability</label>
-<label><input type="radio" name="q3"> Increase speed</label>
+<label><input type="radio" name="q3" value="correct"> Support core activation</label>
+<label><input type="radio" name="q3" value="wrong"> Make exercises harder</label>
+<label><input type="radio" name="q3" value="wrong"> Reduce stability</label>
+<label><input type="radio" name="q3" value="wrong"> Increase speed</label>
 </div>
 </div>
 
@@ -77,10 +77,10 @@
 <h3>Question 4</h3>
 <p>Why is maintaining a neutral spine important?</p>
 <div class="quiz-options">
-<label><input type="radio" name="q4"> Protects the back</label>
-<label><input type="radio" name="q4"> Makes exercises faster</label>
-<label><input type="radio" name="q4"> Improves jumping</label>
-<label><input type="radio" name="q4"> Replaces core</label>
+<label><input type="radio" name="q4" value="correct"> Protects the back</label>
+<label><input type="radio" name="q4" value="wrong"> Makes exercises faster</label>
+<label><input type="radio" name="q4" value="wrong"> Improves jumping</label>
+<label><input type="radio" name="q4" value="wrong"> Replaces core</label>
 </div>
 </div>
 
@@ -89,15 +89,15 @@
 <h3>Question 5</h3>
 <p>Before increasing intensity, students should:</p>
 <div class="quiz-options">
-<label><input type="radio" name="q5"> Master basics first</label>
-<label><input type="radio" name="q5"> Go fast</label>
-<label><input type="radio" name="q5"> Skip breathing</label>
-<label><input type="radio" name="q5"> Ignore posture</label>
+<label><input type="radio" name="q5" value="correct"> Master basics first</label>
+<label><input type="radio" name="q5" value="wrong"> Go fast</label>
+<label><input type="radio" name="q5" value="wrong"> Skip breathing</label>
+<label><input type="radio" name="q5" value="wrong"> Ignore posture</label>
 </div>
 </div>
 
 <div class="quiz-submit">
-<button type="submit">Submit</button>
+<button type="submit" onclick="return handleQuiz()">Submit</button>
 </div>
 
 </form>
@@ -131,6 +131,8 @@
     <p>© 2026 Pilates Bloom</p>
   </div>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
