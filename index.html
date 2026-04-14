@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pilates Bloom</title>
+  <title>About Pilates Bloom</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="light-theme">
+<body>
 
-  <!-- NAVBAR -->
+  <!-- HEADER -->
   <header class="navbar">
     <div class="logo">
       <a href="index.html">
@@ -23,158 +23,48 @@
       <li><a href="about.html">About Pilates Bloom</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-
-    <div class="theme-buttons">
-      <button id="lightThemeBtn" type="button">Light Theme</button>
-      <button id="darkThemeBtn" type="button">Dark Theme</button>
-    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Begin Your Pilates Journey Today</h1>
-    <img src="images/homepage2.png" alt="Pilates homepage image">
-  </section>
-
-  <!-- VISION -->
-  <section class="vision">
-    <img src="images/homepage1.png" alt="Pilates vision image">
-
-    <div class="vision-text">
-      <h2>Vision</h2>
-      <p>
-        Pilates Bloom aims to become a leading digital platform for Pilates education
-        that empowers individuals to develop strength, flexibility, and confidence
-        through structured training programs.
-      </p>
-    </div>
-  </section>
-
-  <!-- LESSONS -->
-  <section class="lessons">
-    <h2>Featured Lessons</h2>
-
-    <div class="lesson-cards">
-
-      <a href="lesson1-coaches.html" class="lesson">
-        <img src="images/lesson1.png" alt="Lesson 1 image">
-        <div class="lesson-info">
-          <h3>Lesson 1 - Introduction to Pilates</h3>
-          <p>Learn the basic principles of Pilates and improve posture.</p>
-        </div>
-      </a>
-
-      <a href="lesson2-coaches.html" class="lesson">
-        <img src="images/lesson2.png" alt="Lesson 2 image">
-        <div class="lesson-info">
-          <h3>Lesson 2 - Core Strength Basics</h3>
-          <p>Strengthen your core muscles and stability.</p>
-        </div>
-      </a>
-
-      <a href="lesson3.html" class="lesson">
-        <img src="images/lesson3.png" alt="Lesson 3 image">
-        <div class="lesson-info">
-          <h3>Lesson 3 - Flexibility &amp; Stretching</h3>
-          <p>Improve flexibility with safe guided stretches.</p>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <section class="home-table-section">
-
-  <div class="table-wrapper">
-    <table class="home-table">
-      <thead>
-        <tr>
-          <th>Lesson</th>
-          <th>Level</th>
-          <th>Duration</th>
-          <th>Focus</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lesson 1</td>
-          <td>Beginner</td>
-          <td>15 min</td>
-          <td>Introduction to Pilates</td>
-        </tr>
-        <tr>
-          <td>Lesson 2</td>
-          <td>Beginner</td>
-          <td>20 min</td>
-          <td>Core Strength</td>
-        </tr>
-        <tr>
-          <td>Lesson 3</td>
-          <td>Intermediate</td>
-          <td>25 min</td>
-          <td>Flexibility & Stretching</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt; About Pilates Bloom
   </div>
-</section>
 
-  <!-- REVIEWS -->
-  <section class="reviews">
-    <h2>Student Reviews:</h2>
+  <!-- ABOUT PAGE -->
+  <section class="about-page">
 
-    <div class="reviews-wrapper">
-      <div class="reviews-track" id="reviewsTrack">
+   <div class="sort-box">
+  <label for="sortTeachers">Sort By</label>
+  <select id="sortTeachers" name="sortTeachers">
+    <option value="random">Random</option>
+    <option value="az">A-Z</option>
+    <option value="za">Z-A</option>
+    <option value="exp-low">Low to High</option>
+    <option value="exp-high">High to Low</option>
+  </select>
+</div>
 
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-user">
-              <img src="images/profile-icon-login-head-icon-vector.jpg" alt="User Icon" class="review-user-icon">
-              <span class="review-name">Lama</span>
-            </div>
+<div class="teachers-scroll" id="teachersContainer">
 
-            <div class="review-text">
-              <p>Coach Izzy explains the exercises clearly and makes learning Pilates easy and enjoyable.</p>
-            </div>
-          </div>
-
-          <div class="review-stars">★★★★★</div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-user">
-              <img src="images/profile-icon-login-head-icon-vector.jpg" alt="User Icon" class="review-user-icon">
-              <span class="review-name">Fay</span>
-            </div>
-
-            <div class="review-text">
-              <p>The lessons helped me improve my posture and feel more confident in my daily movement.</p>
-            </div>
-          </div>
-
-          <div class="review-stars">★★★★★</div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-user">
-              <img src="images/profile-icon-login-head-icon-vector.jpg" alt="User Icon" class="review-user-icon">
-              <span class="review-name">Deem</span>
-            </div>
-
-            <div class="review-text">
-              <p>Coach Izzy makes learning Pilates easy.</p>
-            </div>
-          </div>
-
-          <div class="review-stars">★★★★★</div>
-        </div>
-
-      </div>
-
-      <button class="review-next" id="reviewNextBtn" type="button">➜</button>
+  <div class="teacher-card" data-name="Izzy" data-experience="6">
+    <img src="images/Izzy profile.jpeg" alt="Coach Izzy">
+    <div class="teacher-info">
+      <h2>Coach Izzy</h2>
+      <p><strong>Years of Experience:</strong> 6 years</p>
+      <blockquote>“Strong core, strong confidence.”</blockquote>
     </div>
+  </div>
+
+  <div class="teacher-card" data-name="Nicole" data-experience="8">
+    <img src="images/Nicole profile.jpeg" alt="Coach Nicole">
+    <div class="teacher-info">
+      <h2>Coach Nicole</h2>
+      <p><strong>Years of Experience:</strong> 8 years</p>
+      <blockquote>“Move with intention, bloom with strength.”</blockquote>
+    </div>
+  </div>
+  </div>
+
   </section>
 
   <!-- FOOTER -->
@@ -212,12 +102,9 @@
 
     <div class="footer-bottom">
       <p>© 2026 Pilates Bloom. All Rights Reserved.</p>
-      <p id="clock"></p>
     </div>
   </footer>
-
-  <button id="backToTopBtn" class="back-to-top" type="button">↑</button>
-
+    
 <script src="script.js"></script>
 </body>
 </html>
