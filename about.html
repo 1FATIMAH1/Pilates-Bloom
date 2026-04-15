@@ -1,73 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Pilates Bloom</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-  <!-- HEADER -->
-  <header class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/logo.png" alt="Pilates Bloom Logo">
-      </a>
-    </div>
+<!-- ABOUT PAGE -->
+<section class="about-page">
+    <h1>About Pilates Bloom</h1>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="training.html">Training Program</a></li>
-      <li><a href="dashboard.html">Learning Dashboard</a></li>
-      <li><a href="about.html">About Pilates Bloom</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </header>
-
-  <!-- BREADCRUMB -->
-  <div class="breadcrumb">
-    <a href="index.html">Home</a> &gt; About Pilates Bloom
-  </div>
-
-  <!-- ABOUT PAGE -->
-  <section class="about-page">
-
-   <div class="sort-box">
-  <label for="sortTeachers">Sort By</label>
-  <select id="sortTeachers" name="sortTeachers">
-    <option value="random">Random</option>
-    <option value="az">A-Z</option>
-    <option value="za">Z-A</option>
-    <option value="exp-low">Low to High</option>
-    <option value="exp-high">High to Low</option>
-  </select>
+<div class="sort-box">
+<label for="sortTeachers">Sort By</label>
+@@ -109,81 +108,5 @@ <h2>Coach Nicole</h2>
 </div>
+</footer>
 
-<div class="teachers-scroll" id="teachersContainer">
-
-  <div class="teacher-card" data-name="Izzy" data-experience="6">
-    <img src="images/Izzy profile.jpeg" alt="Coach Izzy">
-    <div class="teacher-info">
-      <h2>Coach Izzy</h2>
-      <p><strong>Years of Experience:</strong> 6 years</p>
-      <blockquote>“Strong core, strong confidence.”</blockquote>
+</body>
+</html>    <div class="sort-box">
+      <label for="sortTeachers">Sort By</label>
+      <select id="sortTeachers" name="sortTeachers">
+        <optgroup label="Name">
+          <option>A-Z</option>
+          <option>Z-A</option>
+        </optgroup>
+        <optgroup label="Years of Experience">
+          <option>Low to High</option>
+          <option>High to Low</option>
+        </optgroup>
+      </select>
     </div>
-  </div>
 
-  <div class="teacher-card" data-name="Nicole" data-experience="8">
-    <img src="images/Nicole profile.jpeg" alt="Coach Nicole">
-    <div class="teacher-info">
-      <h2>Coach Nicole</h2>
-      <p><strong>Years of Experience:</strong> 8 years</p>
-      <blockquote>“Move with intention, bloom with strength.”</blockquote>
+    <div class="teachers-scroll">
+
+      <div class="teacher-card">
+        <img src="images/Izzy profile.jpeg" alt="Coach Izzy">
+        <div class="teacher-info">
+          <h2>Coach Izzy</h2>
+          <p><strong>Years of Experience:</strong> 6 years</p>
+          <blockquote>“Strong core, strong confidence.”</blockquote>
+        </div>
+      </div>
+
+      <div class="teacher-card">
+        <img src="images/Nicole profile.jpeg" alt="Coach Nicole">
+        <div class="teacher-info">
+          <h2>Coach Nicole</h2>
+          <p><strong>Years of Experience:</strong> 8 years</p>
+          <blockquote>“Move with intention, bloom with strength.”</blockquote>
+        </div>
+      </div>
+
     </div>
-  </div>
-  </div>
-
   </section>
 
-  <!-- FOOTER -->
+  
   <footer class="footer">
     <div class="footer-top">
 
@@ -104,7 +84,6 @@
       <p>© 2026 Pilates Bloom. All Rights Reserved.</p>
     </div>
   </footer>
-    
-<script src="script.js"></script>
+
 </body>
 </html>
