@@ -2549,3 +2549,129 @@ body {
     font-size: 26px;
   }
 }
+
+
+/* =========================
+   result page
+========================= */
+
+
+
+
+
+
+.lesson-result-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 30px 40px;
+}
+
+.lesson-result-title {
+  font-size: 34px;
+  color: #d97f9e;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.lesson-result-box,
+.lesson-history-box {
+  background: #fff7f9;
+  border: 1.5px solid #efbfd0;
+  border-radius: 10px;
+  padding: 24px 26px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.lesson-box-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #c96f90;
+  margin-bottom: 8px;
+}
+
+.lesson-result-name {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 28px;
+}
+
+.lesson-score-row {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.lesson-score-card {
+  min-width: 220px;
+}
+
+.lesson-score-label {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.lesson-score-value {
+  font-size: 30px;
+  font-weight: 700;
+  color: #d97f9e;
+}
+
+.lesson-result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 34px 0 38px;
+}
+
+.lesson-result-btn {
+  min-width: 170px;
+  text-align: center;
+  background: #eba5bb;
+  color: white;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 10px rgba(233, 166, 182, 0.28);
+}
+
+.lesson-result-btn:hover {
+  background: #de8faa;
+}
+
+.lesson-history-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lesson-history-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #f3d9e3;
+  font-size: 16px;
+}
+
+.lesson-history-list li:last-child {
+  border-bottom: none;
+}
+
+.lesson-history-list strong {
+  color: #444;
+}
+
+.lesson-motivation-text {
+  text-align: center;
+  font-style: italic;
+  color: #b8738c;
+  margin: 30px 0 45px;
+  font-size: 16px;
+}
